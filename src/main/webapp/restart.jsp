@@ -15,8 +15,10 @@
 </div>
 
 <c:if test="${restart}">
-<h3 style="color:#337ab7;"><c:out value="${message}" >
-</c:out></h3>
+<h3 style="color:#337ab7;">
+<c:out value="${message}" >
+</c:out>
+</h3>
     <button class="btn btn-primary" onclick="restart()">Почати знову</button>
 </c:if>
 

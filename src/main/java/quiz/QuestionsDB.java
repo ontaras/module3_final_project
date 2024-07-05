@@ -1,14 +1,18 @@
 package quiz;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class QuestionsDB {
+    private static final Logger LOGGER = LogManager.getLogger(QuestionsDB.class);
     private final List<Question> questions = new ArrayList<>();
 
     public List<Question> getQuestions() {
-        return questions;
+        LOGGER.error("questions DB wasn't received"); return questions;
     }
 
     public QuestionsDB() {
@@ -36,8 +40,7 @@ public class QuestionsDB {
                     put("Збрехати про себе", false);
                 }}
         ));
+
+        LOGGER.info("questions DB created");
     }
-    /*public int getQuestionIndex(Question question) {
-        return questions.indexOf(question);
-    }*/
 }

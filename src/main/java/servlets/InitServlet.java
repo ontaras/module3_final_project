@@ -1,5 +1,7 @@
 package servlets;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import quiz.Question;
 import quiz.QuestionsDB;
 
