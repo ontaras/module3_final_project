@@ -26,7 +26,7 @@ public class InitServlet extends HttpServlet {
         session.setAttribute("question", question);
         session.setAttribute("index", 0);
 
-        getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/quiz.jsp").forward(req, resp);
     }
 }
 

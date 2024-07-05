@@ -44,6 +44,6 @@ public class LogicServlet extends HttpServlet {
             session.setAttribute("index", index + 1);
         }
 
-        getServletContext().getRequestDispatcher("/index.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/quiz.jsp").forward(req, resp);
     }
 }
